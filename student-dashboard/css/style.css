@@ -1,7 +1,5 @@
-/* ================================
-   Base
-================================
 
+/*
 :root {
     --primary: #730a37;
     --primary-dark: #1e182d;
@@ -22,9 +20,7 @@
  */
 
  :root {
-     /* =========================
-       BRAND COLORS
-    ========================== */
+    
 
      --primary: #C026D3;
      /* Magenta / main brand */
@@ -41,32 +37,24 @@
      --secondary-dark: #6D28D9;
      --secondary-soft: #F5F3FF;
 
-     /* Blue accent from Sign Up button */
+    
      --accent: #2563EB;
      --accent-light: #38BDF8;
      --accent-soft: #EFF6FF;
 
 
-     /* =========================
-       BACKGROUNDS
-    ========================== */
+  
 
      --background: #F7F8FC;
      --surface: #FFFFFF;
      --surface-soft: #F4F5FA;
 
 
-     /* =========================
-       BORDERS
-    ========================== */
 
      --border: #E5E7EB;
      --border-light: #F1F5F9;
 
 
-     /* =========================
-       TEXT
-    ========================== */
 
      --text: #334155;
      --text-dark: #1E293B;
@@ -75,9 +63,6 @@
      --white: #FFFFFF;
 
 
-     /* =========================
-       STATUS COLORS
-    ========================== */
 
      --success: #16A34A;
      --success-soft: #ECFDF5;
@@ -92,9 +77,6 @@
      --info-soft: #F0F9FF;
 
 
-     /* =========================
-       DASHBOARD LAYOUT
-    ========================== */
 
      --sidebar-width: 250px;
      --header-height: 72px;
@@ -111,9 +93,6 @@
          0 12px 35px rgba(30, 41, 59, 0.10);
 
 
-     /* =========================
-       GRADIENTS
-    ========================== */
 
      --primary-gradient:
          linear-gradient(135deg,
@@ -166,9 +145,10 @@ button {
     display: flex;
 }
 
-/* ================================
-   Sidebar
-================================ */
+
+
+
+
 
 .sidebar {
     width: var(--sidebar-width);
@@ -266,9 +246,12 @@ button {
     display: grid;
 }
 
-/* ================================
-   Main
-================================ */
+
+
+
+
+
+
 
 .main-content {
     width: calc(100% - var(--sidebar-width));
@@ -349,9 +332,12 @@ button {
     color: var(--muted);
 }
 
-/* ================================
-   Cards and statistics
-================================ */
+
+
+
+
+
+
 
 .welcome-section {
     background: var(--brand-gradient);
@@ -449,9 +435,16 @@ button {
     margin-bottom: 18px;
 }
 
-/* ================================
-   Donut
-================================ */
+
+
+
+
+
+
+
+
+
+
 
 .donut-section {
     display: flex;
@@ -538,9 +531,13 @@ button {
     background: #9ca3af;
 }
 
-/* ================================
-   Bars
-================================ */
+
+
+
+
+
+
+
 
 /* .student-chart,
 .performance-list {
@@ -598,9 +595,13 @@ button {
 }
 
 
-/* =========================
-   DONUT
-========================= */
+
+
+
+
+
+
+
 
 #students-chart {
     width: 180px;
@@ -634,9 +635,12 @@ button {
 }
 
 
-/* =========================
-   CENTER TEXT
-========================= */
+
+
+
+
+
+
 
 .donut-center {
     grid-area: 1 / 1;
@@ -667,9 +671,12 @@ button {
 }
 
 
-/* =========================
-   LEGEND
-========================= */
+
+
+
+
+
+
 
 .student-legend {
     display: grid;
@@ -840,9 +847,7 @@ button {
 
 
 
-/* ================================
-   Tables
-================================ */
+/
 
 .table-container {
     overflow-x: auto;
@@ -937,10 +942,6 @@ th {
 
 
 
-/* ================================
-line chart
-
-================================ */
 
 
          .line-chart {
@@ -985,10 +986,15 @@ line chart
              font-weight: 600;
              fill: var(--text);
          }
-/* ================================
-   Search / toolbar
 
-================================ */
+
+
+
+
+
+
+
+
 
 
 
@@ -1023,9 +1029,13 @@ line chart
     background: white;
 }
 
-/* ================================
-   Attention / performance
-================================ */
+
+
+
+
+
+
+
 
 .attention-list {
     display: grid;
@@ -1081,9 +1091,15 @@ line chart
     gap: 5px;
 }
 
-/* ================================
-   Profile
-================================ */
+
+
+
+
+
+
+
+
+
 
 .profile-header {
     display: flex;
@@ -1096,9 +1112,13 @@ line chart
     gap: 16px;
 }
 
-/* ================================
-   Error
-================================ */
+
+
+
+
+
+
+
 
 .error-state {
     background: white;
@@ -1108,9 +1128,13 @@ line chart
     text-align: center;
 }
 
-/* ================================
-   Responsive
-================================ */
+
+
+
+
+
+
+
 
 @media (max-width: 1000px) {
     :root {

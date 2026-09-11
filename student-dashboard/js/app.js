@@ -98,13 +98,11 @@ if (allStudents.length) {
             0
         ) / allStudents.length;
 
-    // Display class average
+  
     studentAverage.textContent = `${Math.round(average)}%`;
 
 
-    // ==========================================
-    // COLORS
-    // ==========================================
+  
 
     const colors = [
         "var(--success)",
@@ -117,9 +115,7 @@ if (allStudents.length) {
     ];
 
 
-    // ==========================================
-    // CREATE EQUAL DONUT SEGMENTS
-    // ==========================================
+ 
 
     // Calculate the total of all student performance scores
 const totalPerformance =
@@ -129,22 +125,18 @@ const totalPerformance =
     );
 
 
-// Keep track of where each segment starts
 let currentPosition = 0;
 
-
-// Create one segment for each student
 const gradientParts = allStudents.map((student, index) => {
 
-    // Convert student's average into a percentage
-    // of the total performance
+   
     const segmentSize =
         (student.average / totalPerformance) * 100;
 
     const start = currentPosition;
     const end = currentPosition + segmentSize;
 
-    // Move the starting position for the next student
+
     currentPosition = end;
 
     return `
@@ -173,9 +165,7 @@ const gradientParts = allStudents.map((student, index) => {
     // });
 
 
-    // ==========================================
-    // DRAW DONUT
-    // ==========================================
+ 
 
     const chart = studentChart.querySelector("#students-chart");
 
@@ -183,9 +173,7 @@ const gradientParts = allStudents.map((student, index) => {
         `conic-gradient(${gradientParts.join(",")})`;
 
 
-    // ==========================================
-    // CREATE LEGEND
-    // ==========================================
+  
 
     studentLegend.innerHTML = allStudents.map(
         (student, index) => {

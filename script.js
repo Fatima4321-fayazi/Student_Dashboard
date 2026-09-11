@@ -39,8 +39,7 @@ loginForm.addEventListener("submit", (event) => {
 
   if (!isValid) return;
 
-  // Demo-only: store the identifier needed by the dashboard.
-  // Never store a real password in localStorage.
+ 
   const user = {
     emailOrPhone,
     loginDate: new Date().toISOString(),
