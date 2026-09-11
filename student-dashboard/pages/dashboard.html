@@ -1,0 +1,138 @@
+<section class="welcome-section">
+    <div>
+        <p class="eyebrow">Overview</p>
+        <h2>Student performance at a glance</h2>
+        <p>Monitor assignments, completion, and student performance from one place.</p>
+    </div>
+    <div class="term-badge">Current Term</div>
+</section>
+
+<section class="stats-grid" id="stats-grid"></section>
+
+<section class="dashboard-grid">
+    <article class="card">
+        <div class="card-header">
+            <div><h3>Assignment Completion</h3><p>Overall submission status</p></div>
+        </div>
+        <div class="donut-section">
+            <div class="donut-chart" id="completion-donut">
+                <div class="donut-content">
+                    <strong id="completion-rate">0%</strong>
+                    <span>completed</span>
+                </div>
+            </div>
+            <div class="chart-legend" id="completion-legend"></div>
+        </div>
+    </article>
+<!-- 
+    <article class="card">
+        <div class="card-header">
+            <div><h3>Student Performance</h3><p>Average score by student</p></div>
+        </div>
+
+
+        <div class="donut-chart-wrapper" id="student-chart">
+            <div class="donut-chart" id="students-chart">
+                <div class="donut-center">
+                    <strong id="student-average">0%</strong>
+                    <span>class average</span>
+                </div>
+            </div>
+        
+            <div class="student-legend" id="student-legend"></div>
+        </div>
+
+        
+        <!-- <div class="student-chart" id="student-chart"></div>
+    </article>
+    -->
+  
+
+    <article class="card">
+    
+        <div class="card-header">
+    
+            <div>
+                <h3>Student Performance</h3>
+                <p>Average score by student</p>
+            </div>
+    
+        </div>
+    
+    
+        <div class="donut-chart-wrapper" id="student-chart">
+    
+            <div class="donut-chart" id="students-chart">
+    
+                <div class="donut-center">
+    
+                    <strong id="student-average">
+                        0%
+                    </strong>
+    
+                    <span>
+                        class average
+                    </span>
+    
+                </div>
+    
+            </div>
+    
+    
+            <div class="student-legend" id="student-legend">
+            </div>
+    
+        </div>
+    
+    </article>
+</section> 
+
+
+<section class="content-grid">
+    <article class="card">
+        <div class="card-header">
+            <div>
+                <h3>Students</h3>
+                <p>Current performance overview</p>
+            </div>
+            <button class="text-button" data-page="students">View all</button>
+        </div>
+        <div class="table-container">
+            <div class="line-chart" id="student-line-chart"></div>
+        </div>
+       
+    </article>
+
+    <article class="card">
+        <div class="card-header">
+            <div>
+                <h3>Needs Attention</h3>
+                <p>Students requiring review</p>
+            </div>
+        </div>
+        <div class="attention-list" id="attention-list"></div>
+    </article>
+</section>
+
+
+<section class="content-grid">
+    <article class="card">
+        <div class="card-header">
+            <div><h3>Students</h3><p>Current performance overview</p></div>
+            <button class="text-button" data-page="students">View all</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>Student</th><th>Group</th><th>Average</th><th>Status</th><th></th></tr></thead>
+                <tbody id="recent-students"></tbody>
+            </table>
+        </div>
+    </article>
+
+    <article class="card">
+        <div class="card-header">
+            <div><h3>Needs Attention</h3><p>Students requiring review</p></div>
+        </div>
+        <div class="attention-list" id="attention-list"></div>
+    </article>
+</section>

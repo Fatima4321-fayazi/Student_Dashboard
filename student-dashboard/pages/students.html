@@ -1,0 +1,23 @@
+<section class="page-heading">
+    <p class="eyebrow">Directory</p>
+    <h2>Students</h2>
+    <p>Search and review students already in the system.</p>
+</section>
+
+<article class="card">
+    <div class="toolbar">
+        <label class="search-box">
+            <span>⌕</span>
+            <input type="search" id="student-search" placeholder="Search by name or ID">
+        </label>
+        <select id="group-filter" class="select">
+            <option value="all">All groups</option>
+        </select>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead><tr><th>Student</th><th>ID</th><th>Group</th><th>Average</th><th>Completion</th><th>Status</th><th></th></tr></thead>
+            <tbody id="students-table"></tbody>
+        </table>
+    </div>
+</article>
