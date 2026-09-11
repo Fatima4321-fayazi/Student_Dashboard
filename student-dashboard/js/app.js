@@ -91,7 +91,7 @@ const studentLegend = document.querySelector("#student-legend");
 
 if (allStudents.length) {
 
-    // Calculate class average
+   
     const average =
         allStudents.reduce(
             (sum, student) => sum + student.average,
@@ -117,7 +117,7 @@ if (allStudents.length) {
 
  
 
-    // Calculate the total of all student performance scores
+
 const totalPerformance =
     allStudents.reduce(
         (sum, student) => sum + student.average,
